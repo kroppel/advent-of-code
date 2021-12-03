@@ -1,10 +1,10 @@
 import numpy as np
 import re
 
-input = np.array(open('input.txt').read().split('\n')[:-1])
+input_ = np.array(open('input.txt').read().split('\n')[:-1])
 pw_count = 0
 
-for line in input:
+for line in input_:
 	policy, password = line.split(':')
 
 	# represent policies as list [lower_bound, upper_bound, letter]
